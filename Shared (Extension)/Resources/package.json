@@ -1,0 +1,9 @@
+{
+  "name": "bamboo-extension",
+  "version": "1.0.0",
+  "description": "A Safari web extension for BambooHR",
+  "private": true,
+  "devDependencies": {
+    "@types/chrome": "^0.0.277"
+  }
+}

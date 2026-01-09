@@ -1,0 +1,95 @@
+/* Content script styles */
+/* These styles will be injected into web pages */
+
+/* Calendar sidebar link styles */
+.bamboo-extension-calendar-link {
+  display: flex;
+  text-decoration: none;
+  color: rgb(72, 65, 63);
+  border-radius: 6px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.bamboo-extension-calendar-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  width: 100%;
+}
+
+.bamboo-extension-calendar-link:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  color: rgb(49, 46, 44);
+}
+
+.bamboo-extension-calendar-link--active {
+  background-color: var(--fabric-theme-lightest, #eeeff9) !important;
+  color: var(--fabric-theme-base, #424b9c) !important;
+}
+
+.bamboo-extension-calendar-icon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.bamboo-extension-calendar-text {
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Hide text when sidebar is collapsed */
+.GlobalNavigation:not(.GlobalNavigation--open) .bamboo-extension-calendar-text {
+  display: none;
+}
+
+/* Time off request button */
+.bamboo-extension-timeoff-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  margin-right: 16px;
+  background-color: var(--fabric-theme-base, #424b9c);
+  color: white !important;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s, transform 0.1s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.bamboo-extension-timeoff-button:hover {
+  background-color: var(--fabric-theme-dark, #313875);
+  color: white !important;
+}
+
+.bamboo-extension-timeoff-button:active {
+  transform: translateY(1px);
+}
+
+.bamboo-extension-timeoff-button svg {
+  flex-shrink: 0;
+}
+
+/* Date selection styles */
+.bamboo-extension-selected-date {
+  background-color: rgba(66, 75, 156, 0.15) !important;
+  outline: 2px solid var(--fabric-theme-base, #424b9c) !important;
+  outline-offset: -2px;
+  box-sizing: border-box;
+}
+
+.Calendar__day {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.Calendar__day:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}

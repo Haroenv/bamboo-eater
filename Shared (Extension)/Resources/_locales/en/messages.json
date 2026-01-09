@@ -1,10 +1,10 @@
 {
     "extension_name": {
         "message": "bamboo-eater",
-        "description": "The display name for the extension."
+        "description": "Bamboo Eater"
     },
     "extension_description": {
-        "message": "This is bamboo-eater. You should tell us what your extension does here.",
-        "description": "Description of what the extension does."
+        "message": "This is bamboo-eater. It fixes BambooHR",
+        "description": "BambooHR is weird and we solve some things"
     }
 }

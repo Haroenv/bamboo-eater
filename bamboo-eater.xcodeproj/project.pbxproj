@@ -7,18 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF140DE42F11494400F3860A /* bamboo-eater Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AF140DE32F11494400F3860A /* bamboo-eater Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AF140DEE2F11494400F3860A /* bamboo-eater Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AF140DED2F11494400F3860A /* bamboo-eater Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AF140DE52F11494400F3860A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF140DAA2F11494200F3860A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AF140DE22F11494400F3860A;
-			remoteInfo = "bamboo-eater Extension (iOS)";
-		};
 		AF140DEF2F11494400F3860A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AF140DAA2F11494200F3860A /* Project object */;
@@ -29,17 +21,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		AF140E162F11494400F3860A /* Embed Foundation Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				AF140DE42F11494400F3860A /* bamboo-eater Extension.appex in Embed Foundation Extensions */,
-			);
-			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AF140E202F11494400F3860A /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -54,39 +35,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AF140DC62F11494400F3860A /* bamboo-eater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bamboo-eater.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF140DD82F11494400F3860A /* bamboo-eater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bamboo-eater.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF140DE32F11494400F3860A /* bamboo-eater Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "bamboo-eater Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF140DED2F11494400F3860A /* bamboo-eater Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "bamboo-eater Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		AF140E112F11494400F3860A /* Exceptions for "Shared (App)" folder in "bamboo-eater (iOS)" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"/Localized: Resources/Main.html",
-				Assets.xcassets,
-				Resources/Icon.png,
-				Resources/Script.js,
-				Resources/Style.css,
-				ViewController.swift,
-			);
-			target = AF140DC52F11494400F3860A /* bamboo-eater (iOS) */;
-		};
-		AF140E152F11494400F3860A /* Exceptions for "iOS (Extension)" folder in "bamboo-eater Extension (iOS)" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = AF140DE22F11494400F3860A /* bamboo-eater Extension (iOS) */;
-		};
-		AF140E1A2F11494400F3860A /* Exceptions for "iOS (App)" folder in "bamboo-eater (iOS)" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = AF140DC52F11494400F3860A /* bamboo-eater (iOS) */;
-		};
 		AF140E1B2F11494400F3860A /* Exceptions for "Shared (App)" folder in "bamboo-eater (macOS)" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -106,32 +59,28 @@
 			);
 			target = AF140DEC2F11494400F3860A /* bamboo-eater Extension (macOS) */;
 		};
-		AF140E242F11494400F3860A /* Exceptions for "Shared (Extension)" folder in "bamboo-eater Extension (iOS)" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Resources/_locales,
-				Resources/background.js,
-				Resources/content.js,
-				Resources/images,
-				Resources/manifest.json,
-				Resources/popup.css,
-				Resources/popup.html,
-				Resources/popup.js,
-				SafariWebExtensionHandler.swift,
-			);
-			target = AF140DE22F11494400F3860A /* bamboo-eater Extension (iOS) */;
-		};
 		AF140E252F11494400F3860A /* Exceptions for "Shared (Extension)" folder in "bamboo-eater Extension (macOS)" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Resources/_locales,
-				Resources/background.js,
-				Resources/content.js,
-				Resources/images,
+				Resources/.gitignore,
+				Resources/background/background.js,
+				Resources/content/calendar.js,
+				Resources/content/content.css,
+				Resources/content/content.js,
+				"Resources/content/date-selection.js",
+				Resources/content/navigation.js,
+				"Resources/content/time-off.js",
+				"Resources/images/icon-16.png",
+				"Resources/images/icon-32.png",
+				"Resources/images/icon-48.png",
+				"Resources/images/icon-128.png",
+				"Resources/images/icon-512.png",
+				Resources/jsconfig.json,
 				Resources/manifest.json,
-				Resources/popup.css,
-				Resources/popup.html,
-				Resources/popup.js,
+				Resources/popup/popup.css,
+				Resources/popup/popup.html,
+				Resources/popup/popup.js,
 				SafariWebExtensionHandler.swift,
 			);
 			target = AF140DEC2F11494400F3860A /* bamboo-eater Extension (macOS) */;
@@ -142,7 +91,6 @@
 		AF140DAE2F11494300F3860A /* Shared (App) */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				AF140E112F11494400F3860A /* Exceptions for "Shared (App)" folder in "bamboo-eater (iOS)" target */,
 				AF140E1B2F11494400F3860A /* Exceptions for "Shared (App)" folder in "bamboo-eater (macOS)" target */,
 			);
 			path = "Shared (App)";
@@ -151,35 +99,17 @@
 		AF140DB72F11494400F3860A /* Shared (Extension) */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				AF140E242F11494400F3860A /* Exceptions for "Shared (Extension)" folder in "bamboo-eater Extension (iOS)" target */,
 				AF140E252F11494400F3860A /* Exceptions for "Shared (Extension)" folder in "bamboo-eater Extension (macOS)" target */,
 			);
 			explicitFolders = (
 				Resources/_locales,
-				Resources/images,
 			);
 			path = "Shared (Extension)";
-			sourceTree = "<group>";
-		};
-		AF140DC82F11494400F3860A /* iOS (App) */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				AF140E1A2F11494400F3860A /* Exceptions for "iOS (App)" folder in "bamboo-eater (iOS)" target */,
-			);
-			path = "iOS (App)";
 			sourceTree = "<group>";
 		};
 		AF140DD92F11494400F3860A /* macOS (App) */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "macOS (App)";
-			sourceTree = "<group>";
-		};
-		AF140DE72F11494400F3860A /* iOS (Extension) */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				AF140E152F11494400F3860A /* Exceptions for "iOS (Extension)" folder in "bamboo-eater Extension (iOS)" target */,
-			);
-			path = "iOS (Extension)";
 			sourceTree = "<group>";
 		};
 		AF140DF12F11494400F3860A /* macOS (Extension) */ = {
@@ -193,21 +123,7 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AF140DC32F11494400F3860A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AF140DD52F11494400F3860A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AF140DE02F11494400F3860A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -229,9 +145,7 @@
 			children = (
 				AF140DAE2F11494300F3860A /* Shared (App) */,
 				AF140DB72F11494400F3860A /* Shared (Extension) */,
-				AF140DC82F11494400F3860A /* iOS (App) */,
 				AF140DD92F11494400F3860A /* macOS (App) */,
-				AF140DE72F11494400F3860A /* iOS (Extension) */,
 				AF140DF12F11494400F3860A /* macOS (Extension) */,
 				AF140DC72F11494400F3860A /* Products */,
 			);
@@ -240,9 +154,7 @@
 		AF140DC72F11494400F3860A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AF140DC62F11494400F3860A /* bamboo-eater.app */,
 				AF140DD82F11494400F3860A /* bamboo-eater.app */,
-				AF140DE32F11494400F3860A /* bamboo-eater Extension.appex */,
 				AF140DED2F11494400F3860A /* bamboo-eater Extension.appex */,
 			);
 			name = Products;
@@ -251,30 +163,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AF140DC52F11494400F3860A /* bamboo-eater (iOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AF140E172F11494400F3860A /* Build configuration list for PBXNativeTarget "bamboo-eater (iOS)" */;
-			buildPhases = (
-				AF140DC22F11494400F3860A /* Sources */,
-				AF140DC32F11494400F3860A /* Frameworks */,
-				AF140DC42F11494400F3860A /* Resources */,
-				AF140E162F11494400F3860A /* Embed Foundation Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AF140DE62F11494400F3860A /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				AF140DC82F11494400F3860A /* iOS (App) */,
-			);
-			name = "bamboo-eater (iOS)";
-			packageProductDependencies = (
-			);
-			productName = "bamboo-eater (iOS)";
-			productReference = AF140DC62F11494400F3860A /* bamboo-eater.app */;
-			productType = "com.apple.product-type.application";
-		};
 		AF140DD72F11494400F3860A /* bamboo-eater (macOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF140E212F11494400F3860A /* Build configuration list for PBXNativeTarget "bamboo-eater (macOS)" */;
@@ -298,28 +186,6 @@
 			productName = "bamboo-eater (macOS)";
 			productReference = AF140DD82F11494400F3860A /* bamboo-eater.app */;
 			productType = "com.apple.product-type.application";
-		};
-		AF140DE22F11494400F3860A /* bamboo-eater Extension (iOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AF140E122F11494400F3860A /* Build configuration list for PBXNativeTarget "bamboo-eater Extension (iOS)" */;
-			buildPhases = (
-				AF140DDF2F11494400F3860A /* Sources */,
-				AF140DE02F11494400F3860A /* Frameworks */,
-				AF140DE12F11494400F3860A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				AF140DE72F11494400F3860A /* iOS (Extension) */,
-			);
-			name = "bamboo-eater Extension (iOS)";
-			packageProductDependencies = (
-			);
-			productName = "bamboo-eater Extension (iOS)";
-			productReference = AF140DE32F11494400F3860A /* bamboo-eater Extension.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 		AF140DEC2F11494400F3860A /* bamboo-eater Extension (macOS) */ = {
 			isa = PBXNativeTarget;
@@ -353,13 +219,7 @@
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
-					AF140DC52F11494400F3860A = {
-						CreatedOnToolsVersion = 26.2;
-					};
 					AF140DD72F11494400F3860A = {
-						CreatedOnToolsVersion = 26.2;
-					};
-					AF140DE22F11494400F3860A = {
 						CreatedOnToolsVersion = 26.2;
 					};
 					AF140DEC2F11494400F3860A = {
@@ -381,30 +241,14 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AF140DC52F11494400F3860A /* bamboo-eater (iOS) */,
 				AF140DD72F11494400F3860A /* bamboo-eater (macOS) */,
-				AF140DE22F11494400F3860A /* bamboo-eater Extension (iOS) */,
 				AF140DEC2F11494400F3860A /* bamboo-eater Extension (macOS) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AF140DC42F11494400F3860A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AF140DD62F11494400F3860A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AF140DE12F11494400F3860A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -421,21 +265,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AF140DC22F11494400F3860A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AF140DD42F11494400F3860A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AF140DDF2F11494400F3860A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -452,11 +282,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AF140DE62F11494400F3860A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AF140DE22F11494400F3860A /* bamboo-eater Extension (iOS) */;
-			targetProxy = AF140DE52F11494400F3860A /* PBXContainerItemProxy */;
-		};
 		AF140DF02F11494400F3860A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AF140DEC2F11494400F3860A /* bamboo-eater Extension (macOS) */;
@@ -465,154 +290,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		AF140E132F11494400F3860A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "bamboo-eater Extension";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = (
-					"-framework",
-					SafariServices,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "me.haroen.bamboo-eater.Extension";
-				PRODUCT_NAME = "bamboo-eater Extension";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		AF140E142F11494400F3860A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "bamboo-eater Extension";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = (
-					"-framework",
-					SafariServices,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "me.haroen.bamboo-eater.Extension";
-				PRODUCT_NAME = "bamboo-eater Extension";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		AF140E182F11494400F3860A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS (App)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "bamboo-eater";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = (
-					"-framework",
-					SafariServices,
-					"-framework",
-					WebKit,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "me.haroen.bamboo-eater";
-				PRODUCT_NAME = "bamboo-eater";
-				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		AF140E192F11494400F3860A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS (App)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "bamboo-eater";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = (
-					"-framework",
-					SafariServices,
-					"-framework",
-					WebKit,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "me.haroen.bamboo-eater";
-				PRODUCT_NAME = "bamboo-eater";
-				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		AF140E1D2F11494400F3860A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -885,24 +562,6 @@
 			buildConfigurations = (
 				AF140E262F11494400F3860A /* Debug */,
 				AF140E272F11494400F3860A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AF140E122F11494400F3860A /* Build configuration list for PBXNativeTarget "bamboo-eater Extension (iOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AF140E132F11494400F3860A /* Debug */,
-				AF140E142F11494400F3860A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AF140E172F11494400F3860A /* Build configuration list for PBXNativeTarget "bamboo-eater (iOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AF140E182F11494400F3860A /* Debug */,
-				AF140E192F11494400F3860A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
