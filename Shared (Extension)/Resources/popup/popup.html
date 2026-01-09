@@ -8,9 +8,28 @@
   </head>
   <body>
     <div class="container">
-      <h1>Bamboo Extension</h1>
-      <p>Welcome to your extension!</p>
-      <button id="actionButton">Click Me</button>
+      <h1>🎋 Bamboo Eater</h1>
+
+      <div id="statusSection">
+        <p class="status-text" id="statusText">Loading...</p>
+      </div>
+
+      <div id="actionsSection" class="actions-section">
+        <button
+          id="requestTimeOffButton"
+          class="primary-button"
+          style="display: none"
+        >
+          📅 Request Time Off
+        </button>
+        <button
+          id="openCalendarButton"
+          class="secondary-button"
+          style="display: none"
+        >
+          Open Calendar
+        </button>
+      </div>
     </div>
     <script src="popup.js"></script>
   </body>
