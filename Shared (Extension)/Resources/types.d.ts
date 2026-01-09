@@ -11,3 +11,7 @@ interface MessageResponse {
   status: string;
   message?: string;
 }
+
+interface Window {
+  CSRF_TOKEN?: string;
+}

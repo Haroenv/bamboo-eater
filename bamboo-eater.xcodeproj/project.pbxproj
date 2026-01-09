@@ -71,6 +71,7 @@
 				"Resources/content/date-selection.js",
 				Resources/content/navigation.js,
 				"Resources/content/time-off.js",
+				"Resources/content/early-inject.js",
 				"Resources/images/icon-16.png",
 				"Resources/images/icon-32.png",
 				"Resources/images/icon-48.png",

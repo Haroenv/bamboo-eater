@@ -5,12 +5,12 @@
   "description": "__MSG_extension_description__",
   "default_locale": "en",
   "icons": {
-      "16": "icon-16.png",
-      "32": "icon-32.png",
-      "48": "icon-48.png",
-      "128": "icon-128.png",
-      "256": "icon-256.png",
-      "512": "icon-512.png"
+    "16": "icon-16.png",
+    "32": "icon-32.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png",
+    "256": "icon-256.png",
+    "512": "icon-512.png"
   },
   "action": {
     "default_popup": "popup.html",
@@ -29,6 +29,11 @@
     "type": "module"
   },
   "content_scripts": [
+    {
+      "matches": ["https://*.bamboohr.com/calendar*"],
+      "js": ["early-inject.js"],
+      "run_at": "document_start"
+    },
     {
       "matches": ["https://*.bamboohr.com/*"],
       "js": [
