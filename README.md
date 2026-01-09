@@ -1,6 +1,6 @@
 # Bamboo Eater
 
-![Bamboo Eater Logo](./Shared (App)/Resources/Icon.png)
+![Bamboo Eater Logo](./Shared \(App\)/Resources/Icon.png)
 
 A (Safari) browser extension to fix BambooHR.
 
