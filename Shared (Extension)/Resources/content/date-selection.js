@@ -49,6 +49,20 @@ function setupDateSelection(calendar, selectedDates) {
     const dayCell = target?.closest('.Calendar__day');
     if (!dayCell) return;
 
+    // Only count clicks on the date or background, not on specific events
+    // Check if the click was inside the events container or on an event element
+    if (
+      target &&
+      (target.classList.contains('Calendar__dayEvents') ||
+        target.closest('.Calendar__dayEvents') ||
+        target.classList.contains('Calendar__event') ||
+        target.closest('.Calendar__event') ||
+        target.classList.contains('CalendarRequestEvent') ||
+        target.closest('.CalendarRequestEvent'))
+    ) {
+      return;
+    }
+
     // Get the date from aria-label (e.g., "January 13th")
     const ariaLabel = dayCell.getAttribute('aria-label');
     if (!ariaLabel) return;
